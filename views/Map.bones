@@ -23,6 +23,11 @@ view.prototype.initialize = _.wrap(view.prototype.initialize, function(func) {
     this.model.bind('saved', this.attach);
     this.model.bind('poll', this.attach);
     func.call(this);
+
+    // we want the initial number of maps to be 1
+    var initialSize = 1;
+    while (this.maps.length > initialSize) this.less();
+
     _.each(this.maps, function(m) {
         m._windowResize();
     });

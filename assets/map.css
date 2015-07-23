@@ -3,7 +3,7 @@
 .lots-controls {
   position:absolute;
   left:10px;
-  top:70px;
+  top:65px;
   width:90px;
   z-index:10;
   }
@@ -38,8 +38,9 @@
   top:auto;
   left:auto;
   border-radius:3px 0px 0px 0px;
-  padding:0px;
-  width:20px;
+  padding: 0px 0px 2px 0px;
+  width:12px;
+  height:15px;
   }
 
 .lots.maps-1 .zoom-display.compact { display:none; }
